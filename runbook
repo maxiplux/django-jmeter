@@ -1,0 +1,16 @@
+python manage.py createsuperuser --email admin@example.com --username admin
+
+http://127.0.0.1:8000/o/applications/1/
+http://127.0.0.1:8000/o/applications/register/
+
+jiKncMg0GIJ306YdQKXCn6RuIiZRAmLI6ho7xGpS
+pbkdf2_sha256$390000$qjyObjKm1Nig4dcUIW1CEz$kUa3rqeV6BkuD7+IrnkvUoldKGO/xmWhN9+W5pkK5pw=
+
+
+Client id
+Client secret
+
+
+curl -X POST -d "grant_type=password&username=admin&password=admin&client_id=7IBxYgxBXkl12Y4ry5KqrgnSLKxGi61jDcsuRYdw&client_secret=pbkdf2_sha256$390000$BgbZL3PsbFqjHh868e1EJ9$gekOMZdFwcHZFtS/Sqfz6UJ4DblupO7/FfHBYhepaog=" http://127.0.0.1:8000/o/token/
+
+
