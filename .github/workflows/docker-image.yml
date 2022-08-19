@@ -19,4 +19,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag django-jmeter:$(date +%s)
     - name: Docker Push
-      run: docker push index.docker.io/maxiplux/django-jmeter
+      run: docker push index.docker.io/maxiplux/django-jmeter:$(date +%s)
