@@ -17,6 +17,6 @@ jobs:
     - name: Docker Login
       run: docker login -u ${{ secrets.REGISTRY_USERNAME }} -p ${{ secrets.REGISTRY_PASSWORD }} 
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag django-jmeter:$(date +%s)
+      run: docker build . --file Dockerfile --tag index.docker.io/maxiplux/django-jmeter:$(date +%s)
     - name: Docker Push
       run: docker push index.docker.io/maxiplux/django-jmeter:$(date +%s)
