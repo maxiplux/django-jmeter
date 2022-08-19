@@ -16,7 +16,7 @@ jobs:
     - uses: actions/checkout@v3
     - name: Docker Login
       run: docker login -u ${{ secrets.REGISTRY_USERNAME }} -p ${{ secrets.REGISTRY_PASSWORD }} 
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag index.docker.io/maxiplux/django-jmeter:$(date +%s)
+    - name: Docker Build
+      run: docker build . -t index.docker.io/maxiplux/django-jmeter
     - name: Docker Push
-      run: docker push index.docker.io/maxiplux/django-jmeter:$(date +%s)
+      run: docker push index.docker.io/maxiplux/django-jmeter
