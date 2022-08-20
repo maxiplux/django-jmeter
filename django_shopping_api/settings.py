@@ -30,6 +30,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost','*','clownfish-app-n5j4h.ondigitalocean.app',os.environ.get('DOMAIN_NAME'),'https://oyster-app-mbp6q.ondigitalocean.app/']
 CSRF_TRUSTED_ORIGINS=[os.environ.get('DOMAIN_NAME_SAFE')]
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 
 
