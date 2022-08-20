@@ -17,7 +17,8 @@ from django.contrib import admin
 import oauth2_provider.views as oauth2_views
 from django.urls import path, include
 
-
+from django.conf import settings
+from django.conf.urls.static import static
 from django_shopping_api import router
 
 oauth2_endpoint_views = [
@@ -35,3 +36,7 @@ urlpatterns = oauth2_endpoint_views+[
 
     path('', include(router.router.urls)),
 ]
+
+
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
