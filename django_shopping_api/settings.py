@@ -28,7 +28,7 @@ SECRET_KEY = "django-insecure-8x=!eb&=z)1612x3x+5@!^3bfa!*p+$1%t8nzc9+6ldmafws0=
 DEBUG = True
 
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost','*','clownfish-app-n5j4h.ondigitalocean.app']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost','*','clownfish-app-n5j4h.ondigitalocean.app',os.environ.get('DOMAIN_NAME')]
 
 
 
