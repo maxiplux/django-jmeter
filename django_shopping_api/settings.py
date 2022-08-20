@@ -27,7 +27,9 @@ SECRET_KEY = "django-insecure-8x=!eb&=z)1612x3x+5@!^3bfa!*p+$1%t8nzc9+6ldmafws0=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost','*','clownfish-app-n5j4h.ondigitalocean.app']
+
 
 
 # Application definition
